@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jtl.helloandroid'
+
+    defaultConfig {
+        applicationId "com.jtl.helloandroid"
+    }
+}
+dependencies {
+    implementation project(path:':library-network')
+}
+
+apply from : rootProject.file('./gradle/build_publish.gradle')

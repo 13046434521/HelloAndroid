@@ -1,0 +1,15 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jtl.module_home'
+
+    defaultConfig {
+        if (isBuildApp){
+            applicationId "com.jtl.module_home"
+        }
+    }
+}
+
+apply from : rootProject.file('./gradle/build_publish.gradle')
